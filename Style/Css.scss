@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+$Gris: #C4C4C4;
+$Negro: #252525;
+$WG: #DEDEDE;
+$Azul: #205EFF;
+$HoverAzul: #0034E6;
+$Amarillo: #E8B500;
+$Rojo: #EB0E00;
+$AL: #0094E7;
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+.aa{
+    text-decoration: none;
+    background: $Azul;
+    color: $WG;
+    border-radius: 5px;
+    padding: 5px;
+}
+@mixin Btn($B) {
+    background: $B;
+    padding: 20px 30px;
+    margin: 1px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bolder;
+    color: #DEDEDE;
+    cursor: pointer;
+}
+@mixin input($W) {
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+    width: $W;
+    padding: 5px;
+    color: $Negro;
+    font-weight: bolder;
+}
+
+body{
+    background: $Negro;
+    color: $WG;
+    height: 100vh;
+
+    .MainContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .DivForm-Del{
+            display: flex;
+            // justify-content: flex-start;
+            flex-direction: column;
+            // align-items: flex-start;
+        }
+
+        .DivForm{
+            display: flex;
+            // justify-content: flex-start;
+            flex-direction: column;
+            // align-items: flex-start;
+            h3{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            [class ^= Form]{
+                padding: 5px 15px;
+                background: $WG;
+                border-radius: 10px;
+                margin-bottom: 20px;
+
+                .BtnDel{
+                    @include Btn($Rojo);
+                    width: 100%;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+
+                .DivsInputs{
+                    margin: 10px;
+
+                    #ID{
+                        @include input(50px);
+                    }
+                    #Latitud{
+                        @include input(100px);
+                    }
+                    #Longitud{
+                        @include input(100px);
+                    }
+
+                    Label{
+                        color: $Negro;
+                        display: inline-grid;
+                        font-weight: bolder;
+                        font-size: large;
+
+                        input{
+                            border-radius: 10px;
+                            border: none;
+                            height: 25px;
+                            padding: 5px;
+                            color: $Negro;
+                            font-weight: bolder;
+                        }
+                        select{
+                            border-radius: 10px;
+                            border: none;
+                            height: 37px;
+                            width: 150px;
+                            padding: 5px;
+                            color: $Negro;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+
+                .SubFormAdd-1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+
+                }
+
+                .SubFormAdd-2{
+                    display: flex;
+                    // justify-content: flex-start;
+                    // align-items: flex-start;
+                    // flex-direction: row;
+                    
+                    .DivsInputs{
+                        margin: 10px;
+
+                        label{
+                            color: $Negro;
+                            display: inline-grid;
+                            font-weight: bolder;
+                            font-size: large;
+
+                            input{
+                                border-radius: 10px;
+                                border: none;
+                                height: 25px;
+                                padding: 5px;
+                                color: $Negro;
+                                font-weight: bolder;
+                            }
+
+                            textarea{
+                                resize: none;
+                                border-radius: 10px;
+                                border: none;
+                                padding: 5px;
+                                color: $Negro;
+                                font-weight: bolder;
+                            }
+                            #Muertos{
+                                @include input(100px);
+                            }
+                            #Heridos{
+                                @include input(100px);
+                            }
+                            #Link{
+                                @include input(300px);
+                            }
+                        }
+
+                        }
+                    .SubDiv-1{
+
+                        .div{
+                            display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            flex-direction: row;
+                        }
+                    }
+                    .SubDiv-2{
+                        height: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        // align-items: center;
+                        flex-direction: column;
+
+                        .div{
+                            display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            flex-direction: row;
+                        }
+
+                        .BtnGuardar{
+                            @include Btn($Azul);
+                            width: 100%;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                        }
+                        .BtnModificar{
+                            @include Btn($Amarillo);
+                            width: 100%;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                }
+
+
+
+                
+            }
+
+
+        }
+        table.Tabla{
+            // width: 500px;
+            resize: both;
+            background: $WG;
+            color: $Negro;
+            border-top: 100px;
+            border-radius: 10px;
+            border-collapse: collapse;
+            
+
+            .L{
+                border-left: none;
+            }
+            .R{
+                border-right: none;
+            }
+
+            th{
+                border-bottom: solid 1px $Negro;
+                border-left: solid 1px $Negro;
+                padding: 5px;
+                
+                border-collapse: collapse;
+
+            }
+            td{
+                text-align: center;
+                border-bottom: solid 1px $Negro;
+                border-left: solid 1px $Negro;
+                padding: 5px;
+                
+                border-collapse: collapse;
+            }
+
+        }
+    }
+}

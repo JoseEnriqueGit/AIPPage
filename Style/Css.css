@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.aa {
+  text-decoration: none;
+  background: #205EFF;
+  color: #DEDEDE;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+body {
+  background: #252525;
+  color: #DEDEDE;
+  height: 100vh;
+}
+
+body .MainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .MainContainer .DivForm-Del {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .MainContainer .DivForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .MainContainer .DivForm h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+body .MainContainer .DivForm [class^=Form] {
+  padding: 5px 15px;
+  background: #DEDEDE;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+body .MainContainer .DivForm [class^=Form] .BtnDel {
+  background: #EB0E00;
+  padding: 20px 30px;
+  margin: 1px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bolder;
+  color: #DEDEDE;
+  cursor: pointer;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+body .MainContainer .DivForm [class^=Form] .DivsInputs {
+  margin: 10px;
+}
+
+body .MainContainer .DivForm [class^=Form] .DivsInputs #ID {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  width: 50px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .DivsInputs #Latitud {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  width: 100px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .DivsInputs #Longitud {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  width: 100px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .DivsInputs Label {
+  color: #252525;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  font-weight: bolder;
+  font-size: large;
+}
+
+body .MainContainer .DivForm [class^=Form] .DivsInputs Label input {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .DivsInputs Label select {
+  border-radius: 10px;
+  border: none;
+  height: 37px;
+  width: 150px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .DivsInputs {
+  margin: 10px;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .DivsInputs label {
+  color: #252525;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  font-weight: bolder;
+  font-size: large;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .DivsInputs label input {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .DivsInputs label textarea {
+  resize: none;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .DivsInputs label #Muertos {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  width: 100px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .DivsInputs label #Heridos {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  width: 100px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .DivsInputs label #Link {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  width: 300px;
+  padding: 5px;
+  color: #252525;
+  font-weight: bolder;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .SubDiv-1 .div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .SubDiv-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .SubDiv-2 .div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .SubDiv-2 .BtnGuardar {
+  background: #205EFF;
+  padding: 20px 30px;
+  margin: 1px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bolder;
+  color: #DEDEDE;
+  cursor: pointer;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+body .MainContainer .DivForm [class^=Form] .SubFormAdd-2 .SubDiv-2 .BtnModificar {
+  background: #E8B500;
+  padding: 20px 30px;
+  margin: 1px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bolder;
+  color: #DEDEDE;
+  cursor: pointer;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+body .MainContainer table.Tabla {
+  resize: both;
+  background: #DEDEDE;
+  color: #252525;
+  border-top: 100px;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+body .MainContainer table.Tabla .L {
+  border-left: none;
+}
+
+body .MainContainer table.Tabla .R {
+  border-right: none;
+}
+
+body .MainContainer table.Tabla th {
+  border-bottom: solid 1px #252525;
+  border-left: solid 1px #252525;
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+body .MainContainer table.Tabla td {
+  text-align: center;
+  border-bottom: solid 1px #252525;
+  border-left: solid 1px #252525;
+  padding: 5px;
+  border-collapse: collapse;
+}
+/*# sourceMappingURL=Css.css.map */

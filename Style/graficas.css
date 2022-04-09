@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #C4C4C4;
+}
+
+body .mainContainer {
+  width: 50%;
+}
+
+body .mainContainer canvas {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=graficas.css.map */
